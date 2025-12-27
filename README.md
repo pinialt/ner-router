@@ -33,3 +33,10 @@ graph LR
     B -->|Has Email/IP?| D[Regex Scanner];
     B -->|Has Name?| E[NER Model];
     B -->|No Entities?| F[Direct to LLM];
+```
+
+## Dataset
+
+This project utilizes the **PII Masking 65k** dataset by **AI4Privacy**.
+* **Source:** [Hugging Face: ai4privacy/pii-masking-65k](https://huggingface.co/datasets/ai4privacy/pii-masking-65k)
+* **Usage:** Used for training the teacher model to recognize PII entities (Address, NER, etc.).
